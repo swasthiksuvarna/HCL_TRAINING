@@ -1,0 +1,111 @@
+
+
+.header1 img {
+    float: left;
+
+    height: 100px;
+    background: #555;
+   
+  }
+  
+  .header1 h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+  .multicolortext {
+    background-image: linear-gradient(to left, violet, rgb(81, 11, 131), rgb(9, 75, 9), rgb(5, 5, 96), yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+ 
+.header1 h1 {
+  text-align: center;
+font-weight: bolder;
+font-size: 50px;
+color:rgb(0, 1, 0); 
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header1 p2 {
+  text-align: justify;
+font-size: medium;
+text-align: justify;
+font-weight: bold;
+color:rgb(0, 1, 0); 
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header1 p{
+  text-align:center;
+  font-size: larger;
+  font-weight: bold;
+}
+.header1 {
+  border: 5px outset rgb(123, 7, 7);
+  border-collapse: collapse ;
+  /* background-color: khaki;     */
+  text-align: justify;
+  border-radius: 2px;
+  padding: 20px;
+  color: rgb(4, 5, 8);
+}
+  .header2 p{
+    font-size: large;
+    text-align: justify;
+    font-weight: bold;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 30PX;
+    border-top-left-radius: 50PX;
+    border-style: ridge;
+    
+    padding: 20PX;
+  }
+  .header2 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+  text-decoration: underline;
+  }
+  .header2 a{
+    
+    font-size: 25px;
+     font-style: oblique;
+  
+  }
+  
+  .header2 h2:hover{
+    color:rgb(255, 9, 9);
+  
+   
+}
+.nav_tag {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 35px;
+}
+
+.n1 h2{
+  font-size: xx-large;
+  text-decoration: underline;
+  /* border: 2px outset black; */
+ 
+}
+.n1 nav{
+  border: 5px outset rgb(123, 7, 7);
+  width: max-content;
+  font-size: x-large;
+  background-color: aliceblue;
+  
+}
+.n1 H2:hover{
+  color: palegreen;
+  background-color: brown;
+  width: min-content;
+}
+
+.b{
+  border: 5px ridge rgb(123, 7, 7);
+  padding: 10PX;
+}

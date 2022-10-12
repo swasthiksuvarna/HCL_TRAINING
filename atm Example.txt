@@ -1,0 +1,147 @@
+import java.util.Scanner;
+
+class Atm
+
+{
+
+              public static void main(String[] args)
+
+              {           
+
+                           int pin = 6542;
+
+                           int balance = 6500;
+
+                           boolean exit = true;
+
+                           Scanner sc= new Scanner(System.in);
+
+                           System.out.println("1: View Balance\n2: Deposit Amount\n3: Withdraw Amount\n4:Exit");
+
+                           System.out.println("Enter your Choice");
+
+                           int ch = sc.nextInt();
+
+                           switch(ch)
+
+                           {
+
+                                         case 1:
+
+                                                       System.out.println("Enter your pin");
+
+                                                       int pin1=sc.nextInt();
+
+                                                       if(pin==pin1)
+
+                                                       {
+
+                                                                    System.out.println(balance);
+
+                                                       }
+
+                                                       else
+
+                                                       {
+
+                                                                                  System.out.println("Incorrect Pin");
+
+                                                       }
+
+                                                       break;
+
+                                         case 2:
+
+                                                       System.out.println("Enter your pin");
+
+                                                       int pin2=sc.nextInt();
+
+                                                       if(pin==pin2)
+
+                                                       {
+
+                                                                    System.out.println("Enter the amount to deposit");
+
+                                                                    int b = sc.nextInt();
+
+                                                                    System.out.println("New Balance is:");
+
+                                                                    System.out.println(b+balance);
+
+                                                       }
+
+                                                       else
+
+                                                       {
+
+                                                                                  System.out.println("Incorrect pin");
+
+                                                       }
+
+                                                       break;
+
+                                         case 3:
+
+                                                       System.out.println("Enter your pin");
+
+                                                       int pin3=sc.nextInt();
+
+                                                       if(pin==pin3)
+
+                                                       {
+
+                                                                    System.out.println("Enter the amount to withdraw");
+
+                                                                    int wd = sc.nextInt();
+
+                                                                    if(wd>balance)
+
+                                                                    {
+
+                                                                                  System.out.println("insufficient balance");
+
+                                                                    }
+
+                                                                    else
+
+                                                                    {
+
+                                                                                  System.out.println("Amount withdrawed");
+
+                                                                                  System.out.println("New balance is");
+
+                                                                                  System.out.println(balance-wd);
+
+                                                                    }
+
+                                                       }
+
+                                                       else
+
+                                                       {
+
+                                                                                  System.out.println("Incorrect pin");
+
+                                                       }
+
+                                                       break;
+
+                                         case 4:
+
+                                                       System.out.println("Press 1 to exit");
+
+                                                       int ex = sc.nextInt();
+
+                                                       if(ex==1)
+
+                                                                    System.exit(1);
+
+                                                       break;
+
+                                         default : System.out.println("invalid input");
+
+                           }
+
+              }
+
+}

@@ -1,0 +1,97 @@
+
+
+%@page import=java.sql.DriverManager%
+%@page import=java.sql.ResultSet%
+%@page import=java.sql.Connection%
+%@page import=java.sql.PreparedStatement%
+%@ page language=java contentType=texthtml; charset=ISO-8859-1
+    pageEncoding=ISO-8859-1%
+!DOCTYPE html PUBLIC -W3CDTD HTML 4.01 TransitionalEN httpwww.w3.orgTRhtml4loose.dtd
+html
+head
+meta http-equiv=Content-Type content=texthtml; charset=ISO-8859-1
+titleInsert title heretitle
+
+style
+#customers {
+  font-family Arial, Helvetica, sans-serif;
+  border-collapse collapse;
+  width 100%;
+}
+
+#customers td, #customers th {
+  border 1px solid black;
+  padding 8px;
+}
+
+#customers trnth-child(even){background-color blue;}
+
+#customers trhover {background-color orange;}
+
+#customers th {
+  padding-top 12px;
+  padding-bottom 12px;
+  text-align left;
+  background-colorred;
+  color white;
+}
+style
+
+
+head
+body
+form action= method=post
+h3The Resulth3
+label for=viewDetailsSelect Languagelabel
+select name=language
+  option value=CCoption
+  option value=C++C++option
+  option value=JavaJavaoption
+   option value=AnyAnyoption
+selectbr
+input type=submit value=Submit
+form
+
+%
+
+String language = request.getParameter(language);
+if(language != null){
+%
+table id=customers
+tr
+thFirst Nameth
+thLast Nameth
+thPhone Numberth
+thEmail Idth
+thLanguagesth
+tr
+%
+try{
+Class.forName(com.mysql.cj.jdbc.Driver);
+java.sql.Connection con=DriverManager.getConnection(jdbcmysqllocalhost3306client,root,root);
+ResultSet rs=null;
+
+PreparedStatement ps = con.prepareStatement(select  r.first_name,r.last_name,r.phone_number,r.email,l.lan from user r,languege l where r.email = l.email and l.lan = );
+ps.setString(1, language);
+rs = ps.executeQuery();
+
+%
+%while(rs.next()){ %
+tr
+td%=rs.getString(first_name)%td
+td%=rs.getString(last_name)%td
+td%=rs.getString(phone_number)%td
+td%=rs.getString(email)%td
+td%=rs.getString(lan)%td
+tr
+%} %
+%
+}
+catch(ClassNotFoundException e){
+e.printStackTrace();
+}
+
+} %
+table
+body
+html

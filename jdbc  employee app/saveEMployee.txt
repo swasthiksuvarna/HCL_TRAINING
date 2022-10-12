@@ -1,0 +1,34 @@
+package com.org.alvas.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.employee.EmployeeConnection;
+
+public class EmployeeDao {
+Connection con;
+
+public Employee saveEmployee(Employee employee)
+{
+con=EmployeeConnection.getConnection();
+
+String insert="insert into emp values(?,?,?,?)";
+try {
+PreparedStatement ps=con.prepareStatement(insert);
+
+ps.setInt(1, 01);
+ps.setString(2, "ashlyn");
+ps.setString(3, "ashlyndcosta93@gmail.com");
+ps.setDouble(4, 30000);
+} catch (SQLException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+
+System.out.println(con);
+
+return employee;
+}
+
+}

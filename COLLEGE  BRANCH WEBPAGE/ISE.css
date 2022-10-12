@@ -1,0 +1,134 @@
+
+.myDiv h2 {
+  text-align: center;
+text-decoration: underline;
+/* font-style:italic ; */
+font-weight: bolder;
+font-size: xx-large;
+color:darkgreen; 
+font-weight: bold;
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h22{
+  font-size: large;
+}
+.myDiv P1
+  {
+    text-align: justify;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.myDiv {
+  background-color:rgb(250, 243, 247);
+  border: 5px groove yellow;
+  /* background-color: khaki;     */
+  text-align: justify;
+  padding: 10px;
+  color: rgba(19, 17, 17, 0.752);
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.semdiv{
+  background-color:white;
+  border-radius: 20px;
+  border-width: 80%;
+  border-color:#000;
+}
+ summary {
+  border: 5px groove #CB4E47;
+   /* border: 3px outset  rgb(123, 7, 7); */
+   padding: 20px;
+   border-radius: 20px;
+   width: 50%;
+   background-color: aqua;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* background-color: #eeeeee; */
+   /* box-shadow: 1px 1px 2px #7e5353; */
+   color: darkgreen;
+ }
+ .header2 h2:hover{
+   color:rgb(64, 81, 157);
+}
+div h3{
+ text-align: left;
+ text-decoration: underline;
+ color: rgb(123, 7, 7);
+}
+table th{
+ font-style: italic;
+ color:rgb(5, 6, 7);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ 
+}
+table td{
+  font-style: italic;
+  color:rgb(5, 6, 7);
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+ }
+ table th,td{
+   border-width: 2PX;
+  width: auto;
+  height:auto;
+ 
+  background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right;
+      border: 5px groove #CB4E47;
+ }
+summary ul,li{
+ font-style: italic;
+ color:rgb(5, 6, 7);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+summary ul,p{
+  color: dimgrey;
+  font-weight: bold;
+  font-style: italic;
+}
+#link {
+  background: palevioletred;
+  /* display: inline-block; */
+  text-decoration: double;
+color: #000;
+  height: 22px;
+
+  width: 150px;
+  text-align: center;
+}  
+.A h3{
+color: darkgreen;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.B h3{
+  padding: 10px;
+  text-align: center;
+color: darkgreen; 
+
+}
+
+.D1{
+  border: 5PX outset brown;
+ 
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 20px;
+  
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form demo</title>
+</head>
+<body>
+<form action="submit.jsp" method="get">
+Full name:<input type="text" name="name"><br>
+Gender:<input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="female">Female<br>
+Languages Known:<input type="checkbox" name="language" value="english">English
+<input type="checkbox" name="language" value="hindi">Hindi
+<input type="checkbox" name="language" value="kannada">Kannada<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

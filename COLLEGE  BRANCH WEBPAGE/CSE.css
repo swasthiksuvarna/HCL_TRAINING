@@ -1,0 +1,122 @@
+
+  .myDiv p
+  {
+    text-align: justify;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+  }
+  .myDiv h2
+   {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #780554;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .myDiv {
+   
+   
+    text-align: justify;
+    padding: 10px;
+    color: rgb(4, 5, 8);
+  }
+  summary 
+  {
+    padding: 4px;
+    width: 375px;
+   font-style:normal;
+   /* border: 5px outset indigo; */
+   
+    color: rgb(138, 12, 64);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header2 h2:hover{
+    color:rgb(64, 81, 157);
+}
+
+
+table th{
+  font-style: normal;
+color: peru;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+table th,td{
+  padding:10px ;
+  font-style: italic;
+  color: black;
+  
+  
+  border-color: #275070;
+  
+}
+table td{
+  color: black;
+  font-weight: bold;
+}
+summary ul{
+  font-style: normal;
+  color: peru;
+}
+summary ul, li{
+  color: midnightblue;
+}
+summary ul,p{
+  color: midnightblue;
+  font-weight: bold;
+  font-style: italic;
+}
+.A h3{
+  color: peru;
+  padding: 20px;
+  text-align: center;
+}
+.B h3{
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-size: medium;
+}
+
+D1,nav,a { 
+ 
+  width:500px;
+  height:100px;
+
+ 
+}
+#link {
+  background: palevioletred;
+  /* display: inline-block; */
+  text-decoration: double;
+color: #000;
+  height: 22px;
+  
+  width: 150px;
+  text-align: center;
+}  
+
+
+  summary h3{
+   
+    color: #000;
+    
+text-decoration: underline;
+  
+  }
+
+  .head h3{
+color: brown;
+text-align: center;
+
+width: 490px;
+padding: 5px;
+text-align: justify;
+font-size: medium;
+  }
+
+  
+  
