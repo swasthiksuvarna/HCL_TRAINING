@@ -1,0 +1,135 @@
+///aggregation concept
+
+
+
+import java.util.*;
+class RedBus
+{
+int busno;
+String busname;
+Ticket t;
+public RedBus(int busno)
+{
+this.busno=busno;
+}
+public RedBus(int busno,String busname)
+{
+this(busno);
+this.busname=busname;
+}
+public void BookTicket()
+{
+if(this.t==null)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the ticket number:");
+int ticketno=s.nextInt();
+System.out.println("Enter the arrival place:");
+String arrrival_place=s.next();
+System.out.println("Enter the departure place:");
+String departure_place=s.next();
+System.out.println("Enter the number of ticket:");
+int noOfTicket=s.nextInt();
+this.t=new Ticket(ticketno,arrrival_place,departure_place,noOfTicket);
+System.out.println("ticket successfully created");
+}
+else
+{
+System.out.println("you already booked one ticket");
+}
+}
+public void showTicketdetails()
+{
+if(this.t!=null)
+{
+System.out.println("ticket number"+this.t.getticketno());
+System.out.println("arrival place"+this.t.getarrrival_place());
+System.out.println("departure place"+this.t.getdeparture_place());
+System.out.println("number of ticket"+this.t.getnoOfTicket());
+}
+else
+{
+System.out.println("YOU HAVEN'T BOOKED ANY TICKET");
+}
+}
+public void updatearrival()
+{
+Scanner s=new Scanner(System.in);
+if(this.t!=null)
+{
+System.out.println("Enter new arrival place");
+String arrrival_place=s.next();
+this.t.setarrrival_place(arrrival_place);
+}
+else
+{
+System.out.println("YOU HAVEN'T BOOKED ANY TICKET");
+}
+}
+public void updatedeparture()
+{
+Scanner s=new Scanner(System.in);
+if(this.t!=null)
+{
+System.out.println("Enter new departure place");
+String departure_place=s.next();
+this.t.setdeparture_place(departure_place);
+}
+else
+{
+System.out.println("YOU HAVEN'T BOOKED ANY TICKET");
+}
+}
+public void showRedBusdetails()
+{
+System.out.println("bus name:"+busname);
+System.out.println("bus number:"+busno);
+
+}
+public void canceldetails()
+{
+this.t=null;
+}
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the bus number");
+int busno=s.nextInt();
+System.out.println("enter the bus name");
+String busname=s.next();
+RedBus r=new RedBus(busno,busname);
+
+while(true)
+{
+System.out.println("1.book\n2.ticketd\n3.updatea\n4.updated\n5.rebbusd\n6.cancel\n7.exit\n");
+System.out.println("Enter your choice");
+int choice=s.nextInt();
+switch(choice)
+{
+case 1:
+r.BookTicket();
+break;
+
+case 2:
+r.showTicketdetails();
+break;
+case 3:
+r.updatearrival();
+break;
+case 4:
+r.updatedeparture();
+break;
+case 5:
+r.showRedBusdetails();
+break;
+case 6:
+r.canceldetails();
+break;
+case 7:
+System.exit(0);
+default:
+System.out.println("invalid input");
+}
+}
+}
+}
